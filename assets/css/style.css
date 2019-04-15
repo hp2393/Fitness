@@ -28,6 +28,8 @@ body{
     padding: 0;
     height: 150px;
 
+    border-radius: 5px;
+
     background-image: url(../images/main-row-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
