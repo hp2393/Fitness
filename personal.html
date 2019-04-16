@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GainzzCity</title>
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link CSS File -->
+    <link rel="stylesheet" type="text/css" href="assets/css/personal.css">
+    <!-- Link Font -->
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <!-- Free Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+</head>
+
+<body>
+        <nav class="navbar navbar-style">
+            <!-- <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+            <h3>GainzzCity</h3>
+            <div id= "firebaseui-auth-container"></div>
+        </nav>
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center">Welcome</h1>
+                <h3 class="text-center" id="quote">“The pain of discipline is nothing like the pain of disappointment.” </h3>
+            </div>
+    
+            <div class="row">
+    
+                <!-- Starting Card-->
+                <div class="col-lg-6">
+                    <div class="card card-default">
+                    <div class="card-header">
+                        <strong>Starting</strong>
+                    </div>
+                    
+                    <div class="card-body">
+    
+                        <!--  Form (note the various input "types")-->
+                        <form role="form">
+                        <div class="form-group row">
+                            <label for="name-input">Bench:</label>
+                            <input class="form-control" id="bench-input" type="text">
+                        </div>
+                        <div class="form-group row">
+                            <label for="email-input">Squats:</label>
+                            <input class="form-control" id="squats-input" type="email">
+                        </div>
+                        <div class="form-group row">
+                            <label for="age-input">Deadlifts:</label>
+                            <input class="form-control" id="dead-input" type="number">
+                        </div>
+                        <div class="form-group row">
+                            <label for="age-input">Curls:</label>
+                            <input class="form-control" id="curl-input" type="number">
+                        </div>  
+                        <div class="form-group row">
+                            <label for="age-input">Pushups:</label>
+                            <input class="form-control" id="push-input" type="number">
+                        </div>            
+                        <button type="sumbit" id="sumbit-user"class="btn btn-outline-success">Submit</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+    
+                <!-- Stat Card-->
+                <div class="col-lg-6">
+                    <div class="card card-default">
+                        <div class="card-header">
+                            <strong>Stats</strong>
+                        </div>
+                        <div class="card-body" id="recent-member">
+                            <form role="form">
+                                <div class="form-group row">
+                                    <label for="name-input">Bench:</label>
+                                    <input class="form-control" id="bench2-input" type="text">
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email-input">Squats:</label>
+                                    <input class="form-control" id="squats2-input" type="email">
+                                </div>
+                                <div class="form-group row">
+                                    <label for="age-input">Deadlifts:</label>
+                                    <input class="form-control" id="dead2-input" type="number">
+                                </div>
+                                <div class="form-group row">
+                                    <label for="age-input">Curls:</label>
+                                    <input class="form-control" id="curls2-input" type="number">
+                                </div>  
+                                <div class="form-group row">
+                                    <label for="age-input">Pushups:</label>
+                                    <input class="form-control" id="push2-input" type="number">
+                                </div> 
+                                <button type="sumbit" id="sumbit-user"class="btn btn-outline-success">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+          <div class="container" id="cal">
+                <div class="card">
+                    <h3 class="card-header" id="monthAndYear"></h3>
+                    <table class="table table-bordered table-responsive-sm" id="calendar">
+                        <thead>
+                         <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        </thead>
+                        <tbody id="calendar-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/personal.js"></script>
+
+
+</html>
