@@ -123,7 +123,7 @@ function showCalendar(month, year) {
                 mealPlanBtn.value = 'Meal';
                 
                 $('.workOutPlanBtn').click(function() {
-                    window.open('https://www.reddit.com');
+                    window.open('./workouts.html');
                 });
                 
                 $('.mealPlanBtn').click(function() {
