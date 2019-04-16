@@ -1,67 +1,32 @@
 body {
-    background-color: black;
+    background-color: white;
     background-image: url('../images/background.png');
 }
-
-.first-box {
-    width:400px; 
-    height: 150px;
-    float:left; 
-    background: navy; 
+.jumbotron {
+    background-color:yellow;
+    font-family: cursive;
+}
+#cal {
+    margin-top: 60px;
+}
+.workOutPlanBtn, .mealPlanBtn {
+    background-color: white;
+    color: black;
 }
 
-.first-box p {
-    color: #ffffff;
+.highlight-today {
+    background-color: coral;
+}
+
+.card-header {
+    background-color: gray;
     text-align: center;
-    padding-top: 20px;
-}
-
-.second-box {
-    width:400px; 
-    height: 150px; 
-    float:right; 
-    background: green;
-}
-
-.second-box p {
-    color: #ffffff;
-    text-align: center;
-    padding-top: 20px;
-}
-
-#calendar {
-    max-width: 800px;
-    margin: auto;
-    font-family: sans-serif;
-    margin-top: 150px;
-}
-
-.month {
-    text-align: center;
-    background: gray;
-    font-size: 40px;
-    letter-spacing: 1px;
-    color: white;
-    padding: 25px;
-    border: 1px solid white;
-}
-
-table, th, td {
-    width: 100%;
-    table-layout: fixed;
-    text-align: center;
-    font-size: 17px;
-    border-collapse: collapse;
-    border: 1px solid white;
-}
-
-tr, th, td {
-    padding: 15px;
 }
 
 th {
     background-color: steelblue;
     color: white;
+    text-align: center;
 }
 
 td {
