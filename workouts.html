@@ -10,46 +10,110 @@
     <script type="text/script" src='assets/javascript/workout-fitness.js'></script>
      </head>
 <body>
+  <!--Bootstrap-->
     <div id= 'header1' class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Gainzz City</h1>
           <p class="lead">Get some major GAINZZ with these list of excercises</p>
         </div>
       </div>
-
+      <!--Header Video Player-->
       <div id='player'></div>
       
+      <!--Bootstrap Grid with Nested Card and Modal-->
       <div class="container">
           <div class="row">
             <div class="col-sm-9">
               <h2>Upper Body Workouts
                 <img src='https://darebee.com/images/workouts/muscles/muscle-factory-upperbody-workout.jpg'>
               </h2>
+              <br>
+              <br>
               <div class="row">
                 <div class="col-8 col-sm-6">
                     <div class="card" style="width: 18rem;">
-                        <div class="video-item"></div>
-                        <iframe id="video0" src="https:www.youtube.com/embed/UBa-EtVvSks" frameborder="0" allowfullscreen></iframe>
+                        
+                        <h4>Push Ups</h4>
+                        <iframe id="video0" src="https:www.youtube.com/embed/-Mbr55h3BeQ" frameborder="0" allowfullscreen></iframe>
                         <div class="card-body">
-                          <p class="card-text">A push-up (or press-up) is a common calisthenics exercise beginning from the prone position, or the front leaning rest position known in the military. By raising and lowering the body using the arms, push-ups exercise the pectoral muscles, triceps, and anterior deltoids, with ancillary benefits to the rest of the deltoids, serratus anterior, coracobrachialis and the midsection as a whole.</p>
+                          <p class="card-text">Push Ups are an essential excercise to build your upper body strength</p>
+                                                    <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                              Learn More
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document1">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Push Ups</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    A push-up (or press-up) is a common calisthenics exercise beginning from the prone position, or the front leaning rest position known in the military. By raising and lowering the body using the arms, push-ups exercise the pectoral muscles, triceps, and anterior deltoids, with ancillary benefits to the rest of the deltoids, serratus anterior, coracobrachialis and the midsection as a whole.
+
+
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                         </div>
+                        <!--End Card Body-->
                       </div>
                 </div>
+                <!--Bootstrap Grid with Nested Card and Modal-->
                 <div class="col-4 col-sm-6">
                     <div class="card" style="width: 18rem;">
-                        <div class="video-item">
-                            <iframe id="video0" src="https:www.youtube.com/embed/UBa-EtVvSks" frameborder="0" allowfullscreen></iframe>
-                            </div>
+                        
+                        <h4>Bench Press</h4>
+                            <iframe id="video0" src="https:www.youtube.com/embed/Xyma7Bkvds0" frameborder="0" allowfullscreen></iframe>
+                            
                         <div class="card-body">
-                          <p class="card-text">A pull-up is an upper-body compound pulling exercise. Although it can be performed with any grip, in recent years some have used the term to refer more specifically to a pull-up performed with a palms-forward position.A traditional pull-up relies on upper body strength with no swinging or "kipping" (using a forceful initial movement of the legs in order to gain momentum). The exercise mostly targets the latissimus dorsi muscle of the back along with biceps, rear deltoid and other assisting muscles.</p>
+                          <p class="card-text"></p>
+                                                      <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterA">
+                                Learn More
+                              </button>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModalCenterA" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalCenterTitle">Bench Press</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body-1">
+                                      The bench press is an upper-body strength-training exercise that consists of pressing a weight upwards from a supine position. The exercise works the pectoralis major as well as the supporting chest, arm, and shoulder muscles such as the anterior deltoids, serratus anterior, coracobrachialis, scapulae fixers, trapezii, and the triceps. A barbell is generally used to hold the weight, but a pair of dumbbells can also be used.
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                         </div>
+                        <!--Seperates Card from other divs-->
+                          </div>
                       </div>
+                    </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+        
+        <!--Bootstrap Grid with Nested Card and Modal-->
         <div class="container">
             <div class="row">
               <div class="col-sm-9">
@@ -59,19 +123,77 @@
                 <div class="row">
                   <div class="col-8 col-sm-6">
                       <div class="card" style="width: 18rem;">
-                          <iframe id="video0" src="https:www.youtube.com/embed/UBa-EtVvSks" frameborder="0" allowfullscreen></iframe>
+                        <h3>Planks</h3>
+                          <iframe id="video0" src="https:www.youtube.com/embed/ynUw0YsrmSg" frameborder="0" allowfullscreen></iframe>
          
                           <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                          <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter3">
+                                  Learn More
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        This article is about the isometric exercise for the abdominal muscles. For the lying down game, see Planking (fad). For other uses, see Plank (disambiguation).
+
+Recruit performing a plank at a US Coast Guard training
+The plank (also called a front hold, hover, or abdominal bridge) is an isometric core strength exercise that involves maintaining a position similar to a push-up for the maximum possible time.
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                          
                           </div>
                         </div>
               
                   </div>
+                  <!--Bootstrap Grid with Nested Card and Modal-->
                   <div class="col-4 col-sm-6">
                       <div class="card" style="width: 18rem;">
-                          <iframe id="video0" src="https:www.youtube.com/embed/UBa-EtVvSks" frameborder="0" allowfullscreen></iframe>
+                        <h3>Dead Lifts</h3>
+                          <iframe id="video0" src="https:www.youtube.com/embed/U1H1VG9Uh50" frameborder="0" allowfullscreen></iframe>
                           <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                          <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter4">
+                                  Learn More
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Dead Lifts</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        ...
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                                          
                           </div>
                         </div>
               
@@ -82,7 +204,7 @@
           </div>
           <br>
           <br>
-
+          <!--Bootstrap Grid with Nested Card and Modal-->
           <div class="container">
               <div class="row">
                 <div class="col-sm-9">
@@ -92,19 +214,74 @@
                   <div class="row">
                     <div class="col-8 col-sm-6">
                         <div class="card" style="width: 18rem;">
-                            <iframe id="video0" src="https:www.youtube.com/embed/UBa-EtVvSks?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
+                          <h3>Squats</h3>
+                            <iframe id="video0" src="https:www.youtube.com/embed/MVMNk0HiTMg" frameborder="0" allowfullscreen></iframe>
                             <div class="card-body">
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter5">
+                                  Learm More
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Squats</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        ...
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            
                             </div>
                           </div>
                     
                     
                         </div>
+                        <!--Bootstrap Grid with Nested Card and Modal-->
                     <div class="col-4 col-sm-6">
                         <div class="card" style="width: 18rem;">
-                            <iframe id="video0" src="https:www.youtube.com/embed/UBa-EtVvSks" frameborder="0" allowfullscreen></iframe>
+                          <h3>Leg Curls</h3>
+                            <iframe id="video0" src="https:www.youtube.com/embed/ZHlBSI6JPsA" frameborder="0" allowfullscreen></iframe>
                             <div class="card-body">
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                        <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter6">
+                                Learn More
+                              </button>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalCenterTitle">Leg Curls</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      ...
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                           
                             </div>
                           </div>
                     </div>
