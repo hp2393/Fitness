@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    background-image: url('../images/background.png');
+
+    font-family: 'Signika', sans-serif;
+
+}
+
+.navbar-style{
+    color: white;
+
+    background-image: url(../images/main-row-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    padding: 15px;
+}
+
+.jumbotron {
+    background-color:yellow;
+    font-family: cursive;
+}
+#cal {
+    margin-top: 60px;
+}
+#Workout-btn, .mealPlanBtn {
+    background-color: white;
+    color: black;
+}
+
+.highlight-today {
+    background-color: coral;
+}
+
+.card-header {
+    background-image: url(../images/main-row-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    color: white;
+}
+
+th {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+}
+
+td {
+    background: teal;
+    color: white;
+}
+
+td:hover {
+    background-color: coral;
+}
+
+#calendar {
+    margin: 0;
+
+    background-image: url(../images/main-row-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
