@@ -45,6 +45,8 @@ firebase.auth().onAuthStateChanged(function(user) {
         userID = profile.uid;
         database.ref(userID+"/login").push(true);  
       }
+      
+      console.log(userID);
 
       database.ref(userID + "/Starting").on("value", function(snapshot){
 
@@ -60,7 +62,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         }
       
       });
-      
+
     });
   } else {
 
@@ -69,20 +71,20 @@ firebase.auth().onAuthStateChanged(function(user) {
 // ============ Firebase On-Change Stuff ===========
 console.log (userID);
 
-database.ref(userID + "/Starting").on("value", function(snapshot){
+// database.ref(userID + "/Starting").on("value", function(snapshot){
 
-  if (snapshot.val().set) {
-    writeValues( "Starting", snapshot );
-  }
-});
+//   if (snapshot.val().set) {
+//     writeValues( "Starting", snapshot );
+//   }
+// });
 
-database.ref(userID + "/Current").on("value", function(snapshot){
+// database.ref(userID + "/Current").on("value", function(snapshot){
 
-  if (snapshot.val().set) {
-    writeValues( "Current", snapshot );
-  }
+//   if (snapshot.val().set) {
+//     writeValues( "Current", snapshot );
+//   }
 
-});
+// });
 
 // ============ CALENDAR STUFF ===========
 today = new Date();
