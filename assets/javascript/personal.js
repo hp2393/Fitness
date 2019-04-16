@@ -137,3 +137,22 @@ function showCalendar(month, year) {
 function daysInMonth(iMonth, iYear) {
     return 32 - new Date(iYear, iMonth, 32).getDate();
 }
+
+
+// ============ ADDING PERSONAL DETAILS ============
+
+function settingStarting() {
+  var bench = $("#bench-input").val();
+  var squats = $("#squat-input").val();
+  var dead = $("#dead-input").val();
+  var curl = $("#curl-intput").val();
+  var push = $("push-input").val();
+
+  database.ref(userID+"/starting/bench").set(bench);
+  database.ref(userID+"/starting/squats").set(squats);
+  database.ref(userID+"/starting/dead").set(dead);
+  database.ref(userID+"/starting/curl").set(curl);
+  database.ref(userID+"/starting/push").set(push);
+
+}
+
