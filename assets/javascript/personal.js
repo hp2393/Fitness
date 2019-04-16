@@ -1,4 +1,4 @@
-var userID = window.userID
+var userID;
 
 // ============ Linking the Database ============
 
@@ -45,6 +45,22 @@ firebase.auth().onAuthStateChanged(function(user) {
         userID = profile.uid;
         database.ref(userID+"/login").push(true);  
       }
+
+      database.ref(userID + "/Starting").on("value", function(snapshot){
+
+        if (snapshot.val().set) {
+          writeValues( "Starting", snapshot );
+        }
+      });
+      
+      database.ref(userID + "/Current").on("value", function(snapshot){
+      
+        if (snapshot.val().set) {
+          writeValues( "Current", snapshot );
+        }
+      
+      });
+      
     });
   } else {
 
