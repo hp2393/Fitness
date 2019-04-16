@@ -1,4 +1,4 @@
-var userID;
+var userID = window.userID
 
 // ============ Linking the Database ============
 
@@ -42,7 +42,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     user.providerData.forEach(function (profile) {
       
       if (userID != profile.uid){
-        console.log(userID + " vs " + profile.uid);
         userID = profile.uid;
         database.ref(userID+"/login").push(true);  
       }
@@ -52,6 +51,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 // ============ Firebase On-Change Stuff ===========
+console.log (userID);
 
 database.ref(userID + "/Starting").on("value", function(snapshot){
 
