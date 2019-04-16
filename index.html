@@ -14,60 +14,42 @@
     <!-- Free Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 </head>
 
 <body>
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <!-- <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-                GainzzCity
-            </a>
+        <nav class="navbar navbar-style">
+            <!-- <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+            <h3>GainzzCity</h3>
+            <div id= "firebaseui-auth-container"></div>
         </nav>
 
         <div id= "logo-container" class= "jumbotron">
-            <div class= "row justify-content-left">
-                <div id= "logo-col" class="col-md-4">
-                    <img src="assets/images/logo.jpg" width= "auto" height="100%" class="d-inline-block align-left" alt="">
-                </div>
-
-                <div id= "slogan-col" class="col-md-4 my-auto">
-                    <p id= "slogan" class= "h6 d-flex text-center">Making You Whatever You Want... </p>
-                    <p id= "slogan" class= "h6 d-flex text-center">Yada yada yada</p>
-
+            <div class= "row">
+                <div id= "logo-col" class="col align-self-center">
+                    <img src="assets/images/logo.jpg" width= "auto" height="100%" class="d-inline-block float-left" alt="">
+                    <p id= "slogan" class= "h4 d-flex text-center">Making You Whatever You Want... </p>
+                    <p id= "slogan" class= "h4 d-flex text-center">Yada yada yada</p>            
                 </div>
             </div>
         </div>
 
-        <div id= "aspects-container" class= "container-fluid">
-            <div id= "fitness-desc-row" class= "row justify-content-start">
-                <div id= "desc-col" class= "col-md-8">
-                    <img src="assets/images/main-fitness.jpg" width="150" height="150" class="d-inline-block float-left" alt="">
+        <div id= "aspects-container" class= "container-fluid"></div>
 
-                    <p id= "desc-text" class= "h6 d-flex text-left">Giving you the information available to perform a workout to your choosing</p>
-                </div>
+        <footer class= "footer">
+            <div id= "footer-container" class= "d-flex container-fluid justify-content-md-center">
+                <button id= 'main-more-info' type= 'submit' class= 'btn btn-light' onclick= 'moreInfo()'>View More Information</button>
             </div>
-
-            <div id= "meals-desc-row" class= "row justify-content-end">
-                <div id = "desc-meals-col" class= "col-md-8">
-                    <p id= "desc-text" class= "h6 d-flex text-left">Assisting in planning your meals based on calories <br> & ingredients</p>
-                </div>
-            </div>
-
-            <div id= "meals-desc-row" class= "row justify-content-start">
-                <div id = "desc-col" class= "col-md-8">
-                    <img src="assets/images/main-personalized.jpg" width="150" height="150" class="d-inline-block float-left" alt="">
-
-                    <p id= "desc-text" class= "h6 d-flex text-left">A free approach to fitness logging that allows you to make all the choices while we assist with providing the information you need!</p>
-                </div>
-            </div>
-
-
-        </div>
-
-        
-
-
+        </footer>
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+
 
 </html>
