@@ -48,27 +48,35 @@
     
                         <!--  Form (note the various input "types")-->
                         <form role="form">
+                            <!-- Upper Body -->
                         <div class="form-group row">
                             <label for="bench-input">Bench:</label>
                             <input class="form-control" id="bench-input" type="text">
                         </div>
                         <div class="form-group row">
-                            <label for="squats-input">Squats:</label>
-                            <input class="form-control" id="squats-input" type="email">
-                        </div>
+                                <label for="push-input">Pushups:</label>
+                                <input class="form-control" id="push-input" type="number">
+                        </div> 
+                            <!-- Core Body -->
                         <div class="form-group row">
                             <label for="dead-input">Deadlifts:</label>
                             <input class="form-control" id="dead-input" type="number">
                         </div>
                         <div class="form-group row">
-                            <label for="curl-input">Curls:</label>
-                            <input class="form-control" id="curl-input" type="number">
-                        </div>  
+                                <label for="planks-input">Planks:</label>
+                                <input class="form-control" id="planks-input" type="number">
+                        </div>
+                            <!-- Lower Body -->
                         <div class="form-group row">
-                            <label for="push-input">Pushups:</label>
-                            <input class="form-control" id="push-input" type="number">
-                        </div>            
-                        <button type="sumbit" id="sumbit-starting"class="btn btn-outline-success" onclick="submitStartin()">Submit</button>
+                                <label for="squats-input">Squats:</label>
+                                <input class="form-control" id="squats-input" type="email">
+                            </div>
+                        <div class="form-group row">
+                            <label for="lcurl-input">Leg Curls:</label>
+                            <input class="form-control" id="lcurl-input" type="number">
+                        </div>  
+           
+                        <button type="sumbit" id="sumbit-starting"class="btn btn-outline-success" onclick="submitStartin( 'Starting' )">Submit</button>
                         </form>
                     </div>
                     </div>
