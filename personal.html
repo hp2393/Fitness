@@ -49,34 +49,35 @@
                         <!--  Form (note the various input "types")-->
                         <form role="form">
                             <!-- Upper Body -->
-                        <div class="form-group row">
+                        <div id= "sta-ben-row" class="form-group row">
                             <label for="bench-input">Bench:</label>
-                            <input class="form-control" id="bench-input" type="text">
+                            <input class="form-control" id="bench-input" type="number">
                         </div>
-                        <div class="form-group row">
+                        <div id= "sta-pus-row" class="form-group row">
                                 <label for="push-input">Pushups:</label>
                                 <input class="form-control" id="push-input" type="number">
                         </div> 
                             <!-- Core Body -->
-                        <div class="form-group row">
+                        <div id= "sta-dea-row" class="form-group row">
                             <label for="dead-input">Deadlifts:</label>
                             <input class="form-control" id="dead-input" type="number">
                         </div>
-                        <div class="form-group row">
-                                <label for="planks-input">Planks:</label>
-                                <input class="form-control" id="planks-input" type="number">
+                        <div id= "sta-pla-row" class="form-group row">
+                                <label for="plank-input">Planks:</label>
+                                <input class="form-control" id="plank-input" type="number">
                         </div>
                             <!-- Lower Body -->
-                        <div class="form-group row">
+                        <div id= "sta-squ-row" class="form-group row">
                                 <label for="squats-input">Squats:</label>
-                                <input class="form-control" id="squats-input" type="email">
+                                <input class="form-control" id="squat-input" type="number">
                             </div>
-                        <div class="form-group row">
+                        <div id= "sta-lcu-row" class="form-group row">
                             <label for="lcurl-input">Leg Curls:</label>
                             <input class="form-control" id="lcurl-input" type="number">
                         </div>  
-           
-                        <button type="sumbit" id="sumbit-starting"class="btn btn-outline-success" onclick="submitStartin( 'Starting' )">Submit</button>
+                        <div id= "sta-sub-btn">
+                                <button type="sumbit" id="sumbit-starting"class="btn btn-outline-success" onclick="settingStarting( 'Starting' )">Submit</button>
+                        </div>
                         </form>
                     </div>
                     </div>
@@ -90,27 +91,36 @@
                         </div>
                         <div class="card-body" id="recent-member">
                             <form role="form">
-                                <div class="form-group row">
+                                <div id= "cur-ben-row" class="form-group row">
                                     <label for="bench2-input">Bench:</label>
-                                    <input class="form-control" id="bench2-input" type="text">
+                                    <input class="form-control" id="bench2-input" type="number">
                                 </div>
-                                <div class="form-group row">
-                                    <label for="squats2-input">Squats:</label>
-                                    <input class="form-control" id="squats2-input" type="email">
-                                </div>
-                                <div class="form-group row">
-                                    <label for="dead2-input">Deadlifts:</label>
-                                    <input class="form-control" id="dead2-input" type="number">
-                                </div>
-                                <div class="form-group row">
-                                    <label for="curls2-input">Curls:</label>
-                                    <input class="form-control" id="curls2-input" type="number">
-                                </div>  
-                                <div class="form-group row">
+                                <div id= "cur-pus-row" class="form-group row">
                                     <label for="push2-input">Pushups:</label>
                                     <input class="form-control" id="push2-input" type="number">
                                 </div> 
-                                <button type="sumbit" id="sumbit-user"class="btn btn-outline-success">Submit</button>
+
+                                <div id= "cur-dea-row" class="form-group row">
+                                    <label for="dead2-input">Deadlifts:</label>
+                                    <input class="form-control" id="dead2-input" type="number">
+                                </div>
+                                <div id= "cur-pla-row" class="form-group row">
+                                    <label for="plank2-input">Planks:</label>
+                                    <input class="form-control" id="plank2-input" type="number">
+                                </div>
+    
+                                <div id= "cur-squ-row" class="form-group row">
+                                    <label for="squat2-input">Squats:</label>
+                                    <input class="form-control" id="squat2-input" type="number">
+                                </div>
+                                <div id= "cur-lcu-row" class="form-group row">
+                                    <label for="lcurl2-input">Curls:</label>
+                                    <input class="form-control" id="lcurl2-input" type="number">
+                                </div>
+
+                                <div id= "cur-sub-btn">
+                                    <button type="sumbit" id="sumbit-user"class="btn btn-outline-success" onclick="settingStarting( 'Current' )">Submit</button>
+                                </div>
                             </form>
                         </div>
                     </div>

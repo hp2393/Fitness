@@ -51,6 +51,22 @@ firebase.auth().onAuthStateChanged(function(user) {
 
   }
 });
+// ============ Firebase On-Change Stuff ===========
+
+database.ref(userID + "/Starting").on("value", function(snapshot){
+
+  if (snapshot.val().set) {
+    writeValues( "Starting", snapshot );
+  }
+});
+
+database.ref(userID + "/Current").on("value", function(snapshot){
+
+  if (snapshot.val().set) {
+    writeValues( "Current", snapshot );
+  }
+
+});
 
 // ============ CALENDAR STUFF ===========
 today = new Date();
@@ -142,21 +158,85 @@ function daysInMonth(iMonth, iYear) {
 // ============ ADDING PERSONAL DETAILS ============
 
 function settingStarting( location ) {
-  var bench = $("#bench-input").val();
-  var push = $("push-input").val();
 
-  var dead = $("#dead-input").val();
-  var planks = $("planks-input").val();
+  console.log(userID);
+  var bench = 0;
+  var push = 0;
+  var dead = 0;
+  var plank = 0;
+  var squat = 0;
+  var lcurl = 0;
 
-  var squats = $("#squat-input").val();
-  var lcurl = $("#lcurl-intput").val();
+  if (location === "Starting") {
+    bench = $("#bench-input").val();
+    push = $("#push-input").val();
+  
+    dead = $("#dead-input").val();
+    plank = $("#plank-input").val();
+  
+    squat = $("#squat-input").val();
+    lcurl = $("#lcurl-input").val();
+
+
+  
+  } else if (location === "Current") {
+    bench = $("#bench2-input").val();
+    push = $("#push2-input").val();
+  
+    dead = $("#dead2-input").val();
+    plank = $("#plank2-input").val();
+  
+    squat = $("#squat2-input").val();
+    lcurl = $("#lcurl2-input").val();
+
+  }
 
   database.ref(userID+"/" + location + "/bench").set(bench);
-  database.ref(userID+"/starting/push").set(push);
+  database.ref(userID+"/" + location + "/push").set(push);
 
-  database.ref(userID+"/starting/squats").set(squats);
-  database.ref(userID+"/starting/dead").set(dead);
-  database.ref(userID+"/starting/curl").set(curl);
+  database.ref(userID+"/" + location + "/dead").set(dead);
+  database.ref(userID+"/" + location + "/plank").set(plank);
+
+  database.ref(userID+"/" + location + "/squats").set(squat);
+  database.ref(userID+"/" + location + "/legcurl").set(lcurl);
+
+  database.ref(userID+"/" + location + "/set").set(true);
 
 }
 
+function writeValues ( location, snapshot ) {
+  var snapshot = snapshot;
+
+  console.log(snapshot.val());
+
+  if (location === "Starting") {
+    var abr = "sta";
+
+  } else if (location === "Current") {
+    var abr = "cur";
+
+  }
+
+  $("#"+abr+"-ben-row").empty();
+  $("#"+abr+"-pus-row").empty();
+  $("#"+abr+"-dea-row").empty();
+  $("#"+abr+"-pla-row").empty();
+  $("#"+abr+"-squ-row").empty();
+  $("#"+abr+"-lcu-row").empty();
+  $("#"+abr+"-sub-btn").empty();
+
+  $("#"+abr+"-ben-row").append("<p id= 'starting-set-values' class= 'text-left'> Bench : " + snapshot.val().bench + "</p>");
+  $("#"+abr+"-pus-row").append("<p id= 'starting-set-values' class= 'text-left'> Pushups : " + snapshot.val().push + "</p>");
+  $("#"+abr+"-dea-row").append("<p id= 'starting-set-values' class= 'text-left'> Deadlifts : " + snapshot.val().dead + "</p>");
+  $("#"+abr+"-pla-row").append("<p id= 'starting-set-values' class= 'text-left'> Planks : " + snapshot.val().plank + "</p>");
+  $("#"+abr+"-squ-row").append("<p id= 'starting-set-values' class= 'text-left'> Squats: " + snapshot.val().squats + "</p>");
+  $("#"+abr+"-lcu-row").append("<p id= 'starting-set-values' class= 'text-left'> Leg Curls: " + snapshot.val().legcurl + "</p>");
+
+  if (location === "Current") {
+    $("#"+abr+"-sub-btn").append("<button id= 'reset' class= 'btn btn-outline-success' onclick='resetCurrent()'> RESET </button>");
+  }
+}
+
+function resetCurrent() {
+  database.ref(userID + "/Current/set").set(false);
+}
