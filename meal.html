@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness Meal Plan</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- Free Icons -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <!-- This link connects to my CSS file. -->
+    <link rel="stylesheet" type="text/css" href="assets/css/meal.css">
+
+    
+
+</head>
+
+<body>
+<div>
+
+    <div id= "fitnessMealPlan-header" class="jumbotron">
+        <h1 class="display-4 font-weight-bold text-center">My Meal Plan</h1>
+    </div>
+
+    <div id="search-by:" class="container-div">
+        <h2 id="search-by-header" class="container-header">Search By: </h2>
+        <!-- Form to capture meal and calorie required -->
+        <form id="search-by-forms">
+            
+            <div class="form-group">
+			      <label for="search-input">Meal type or Name</label>
+            <input type="text" class="form-control" id="meal-type">  
+           <label for="search-input">Calories</label>
+            <input type="text" class="form-control" id="calories">
+              </div>
+
+            </div>
+
+            <div class= "button-group">
+                <button id="submit" class="btn btn-light" type="submit"><i class="fas fa-search"></i>Search Meals</button>
+                <button id= "clear-button"  class="btn btn-light" type="submit">Clear Results</button>
+            </div>
+
+
+        </form>
+        </div><br />
+	<br />
+	   <div class="row">
+
+      <div class="col-md-12">
+		<h2>Meal Details</h2>
+        <!-- The Meal and Calorie table-->
+        <div class="card mb-4">
+          <div class="card-header" style="background-color: grey; color: white">Details</div>		  
+          <div class="card-body">
+            <table class="table table-hover" id="meal-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Brand</th>
+                  <th>No of Calories</th>
+				   <th>Serving Size Quantity</th>
+				    <th>Serving Size Unit</th>
+                </tr>
+              </thead>
+             <tbody id="meal-detail-body">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <script src="assets/javascript/meal.js"></script>
+</div>
+</body>
+</html>

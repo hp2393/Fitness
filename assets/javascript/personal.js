@@ -45,8 +45,10 @@ firebase.auth().onAuthStateChanged(function(user) {
         userID = profile.uid;
         database.ref(userID+"/login").push(true);  
       }
-      
+
       console.log(userID);
+
+// ============ Firebase On-Change Stuff ===========
 
       database.ref(userID + "/Starting").on("value", function(snapshot){
 
@@ -63,28 +65,14 @@ firebase.auth().onAuthStateChanged(function(user) {
       
       });
 
+// ==================================================
+
     });
   } else {
 
   }
 });
-// ============ Firebase On-Change Stuff ===========
-console.log (userID);
 
-// database.ref(userID + "/Starting").on("value", function(snapshot){
-
-//   if (snapshot.val().set) {
-//     writeValues( "Starting", snapshot );
-//   }
-// });
-
-// database.ref(userID + "/Current").on("value", function(snapshot){
-
-//   if (snapshot.val().set) {
-//     writeValues( "Current", snapshot );
-//   }
-
-// });
 
 // ============ CALENDAR STUFF ===========
 today = new Date();
@@ -137,7 +125,7 @@ function showCalendar(month, year) {
                 
                 var mealPlanBtn = document.createElement('input');
                 mealPlanBtn.type = "button";
-                mealPlanBtn.className = "btn btn-primary btn-sm mealPlanBtn";
+                mealPlanBtn.className = "btn btn-light btn-sm mealPlanBtn";
                 mealPlanBtn.value = 'Meal';
                 
                 $('.workOutPlanBtn').click(function() {
@@ -145,7 +133,7 @@ function showCalendar(month, year) {
                 });
                 
                 $('.mealPlanBtn').click(function() {
-                    window.open('https://www.google.com');
+                    window.open('./meal.html');
                 });
             
                 cell = document.createElement("td");
