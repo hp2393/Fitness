@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style ></style>
-    <script type="text/script" src='assets/javascript/workout-fitness.js'></script>
+    <link rel='stylesheet' href='assets/workout-css/workout-style.css'>
+    <script defer type="text/script" src='assets/javascript/workout-fitness.js'></script>
      </head>
 <body>
+  <div class='container'>
   <!--Bootstrap-->
     <div id= 'header1' class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -19,13 +20,13 @@
       </div>
       <!--Header Video Player-->
       <div id='player'></div>
-      
+      <!-- <iframe width="900" height="506" src="https://www.youtube.com/embed/-Mbr55h3BeQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       <!--Bootstrap Grid with Nested Card and Modal-->
       <div class="container">
           <div class="row">
             <div class="col-sm-9">
-              <h2>Upper Body Workouts
-                <img src='https://darebee.com/images/workouts/muscles/muscle-factory-upperbody-workout.jpg'>
+              <h2 id='header' >Upper Body Workouts
+                <img id='image'src='https://darebee.com/images/workouts/muscles/muscle-factory-upperbody-workout.jpg'>
               </h2>
               <br>
               <br>
@@ -33,10 +34,10 @@
                 <div class="col-8 col-sm-6">
                     <div class="card" style="width: 18rem;">
                         
-                        <h4>Push Ups</h4>
+                        <h4 id='header'>Push Ups</h4>
                         <iframe id="video0" src="https:www.youtube.com/embed/-Mbr55h3BeQ" frameborder="0" allowfullscreen></iframe>
                         <div class="card-body">
-                          <p class="card-text">Push Ups are an essential excercise to build your upper body strength</p>
+                          <p class="card-text">Push Ups are essential to build your upper body strength and can be done anywhere. </p>
                                                     <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                               Learn More
@@ -68,15 +69,17 @@
                         <!--End Card Body-->
                       </div>
                 </div>
+                
+                
                 <!--Bootstrap Grid with Nested Card and Modal-->
                 <div class="col-4 col-sm-6">
                     <div class="card" style="width: 18rem;">
                         
-                        <h4>Bench Press</h4>
+                        <h4 id='header'>Bench Press</h4>
                             <iframe id="video0" src="https:www.youtube.com/embed/Xyma7Bkvds0" frameborder="0" allowfullscreen></iframe>
                             
                         <div class="card-body">
-                          <p class="card-text"></p>
+                          <p class="card-text">Bench Press are a mandatory on chest day. They're great at working your chest and delts.</p>
                                                       <!-- Button trigger modal -->
                               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterA">
                                 Learn More
@@ -109,6 +112,8 @@
                     </div>
                 </div>
               </div>
+              <br>
+              <br>
             </div>
           </div>
         </div>
@@ -117,17 +122,21 @@
         <div class="container">
             <div class="row">
               <div class="col-sm-9">
-                <h2>Core Workouts
-                  <img src="https://usercontent1.hubstatic.com/7815702.jpg">
-                </h2>
+                <h2 id='header'>Core Workouts</h2>
+                <br>
+                <br>
+                  <img id='image' src="https://usercontent1.hubstatic.com/7815702.jpg">
+                  <br>
+                  <br>
+                
                 <div class="row">
                   <div class="col-8 col-sm-6">
                       <div class="card" style="width: 18rem;">
-                        <h3>Planks</h3>
+                        <h3 id='header'>Planks</h3>
                           <iframe id="video0" src="https:www.youtube.com/embed/ynUw0YsrmSg" frameborder="0" allowfullscreen></iframe>
          
                           <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">A simple yet effective exercise to work your core, planks can help you get that 6 pack you want.</p>
                                                           <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter3">
                                   Learn More
@@ -144,10 +153,7 @@
                                         </button>
                                       </div>
                                       <div class="modal-body">
-                                        This article is about the isometric exercise for the abdominal muscles. For the lying down game, see Planking (fad). For other uses, see Plank (disambiguation).
-
-Recruit performing a plank at a US Coast Guard training
-The plank (also called a front hold, hover, or abdominal bridge) is an isometric core strength exercise that involves maintaining a position similar to a push-up for the maximum possible time.
+                                          The plank (also called a front hold, hover, or abdominal bridge) is an isometric core strength exercise that involves maintaining a position similar to a push-up for the maximum possible time.
                                       </div>
                                       <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -164,10 +170,10 @@ The plank (also called a front hold, hover, or abdominal bridge) is an isometric
                   <!--Bootstrap Grid with Nested Card and Modal-->
                   <div class="col-4 col-sm-6">
                       <div class="card" style="width: 18rem;">
-                        <h3>Dead Lifts</h3>
-                          <iframe id="video0" src="https:www.youtube.com/embed/U1H1VG9Uh50" frameborder="0" allowfullscreen></iframe>
+                        <h3 id='header'>Squats</h3>
+                          <iframe id="video0" src="https:www.youtube.com/embed/MVMNk0HiTMg" frameborder="0" allowfullscreen></iframe>
                           <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">We all know squats helps with your glutes, but it can also be a great excercise for your core.</p>
                                                           <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter4">
                                   Learn More
@@ -178,13 +184,13 @@ The plank (also called a front hold, hover, or abdominal bridge) is an isometric
                                   <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                       <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalCenterTitle">Dead Lifts</h5>
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Squats</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                           <span aria-hidden="true">&times;</span>
                                         </button>
                                       </div>
                                       <div class="modal-body">
-                                        ...
+                                          In strength training and fitness, the squat is a compound, full-body exercise that trains primarily the muscles of the thighs, hips and buttocks, quadriceps femoris muscle (vastus lateralis, vastus medialis, vastus intermedius and rectus femoris), hamstrings, as well as strengthening the bones, ligaments and insertion of the tendons throughout the lower body. Squats are considered a vital exercise for increasing the strength and size of the legs as well as developing core strength
                                       </div>
                                       <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -208,16 +214,16 @@ The plank (also called a front hold, hover, or abdominal bridge) is an isometric
           <div class="container">
               <div class="row">
                 <div class="col-sm-9">
-                  <h2>Lower Body Workouts
-                    <img srcd=''>
+                  <h2 id='header'>Lower Body Workouts
+                    <img id='image'srcd=''>
                   </h2>
                   <div class="row">
                     <div class="col-8 col-sm-6">
                         <div class="card" style="width: 18rem;">
-                          <h3>Squats</h3>
-                            <iframe id="video0" src="https:www.youtube.com/embed/MVMNk0HiTMg" frameborder="0" allowfullscreen></iframe>
+                          <h3 id='header'>Deadlift</h3>
+                            <iframe id="video0" src="https:www.youtube.com/embed/U1H1VG9Uh50" frameborder="0" allowfullscreen></iframe>
                             <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">Want some major gainz? Then you want to deadlift. Form is important so you dont blow your back out.</p>
                                                             <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter5">
                                   Learm More
@@ -228,13 +234,13 @@ The plank (also called a front hold, hover, or abdominal bridge) is an isometric
                                   <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                       <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalCenterTitle">Squats</h5>
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Deadlift</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                           <span aria-hidden="true">&times;</span>
                                         </button>
                                       </div>
                                       <div class="modal-body">
-                                        ...
+                                          Deadlift refers to the lifting of dead weight (weight without momentum), such as weights lying on the ground. It is one of the few standard weight training exercises in which all repetitions begin with dead weight. There are several positions one can approach when performing the deadlift, which include the conventional deadlift, squat, and sumo-deadlift. In most other lifts there is an eccentric (lowering of the weight) phase followed by the concentric (lifting of the weight) phase. During these exercises, a small amount of energy is stored in the stretched muscles and tendons in the eccentric phase if the lifter is not flexible beyond the range of motion.
                                       </div>
                                       <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -252,10 +258,10 @@ The plank (also called a front hold, hover, or abdominal bridge) is an isometric
                         <!--Bootstrap Grid with Nested Card and Modal-->
                     <div class="col-4 col-sm-6">
                         <div class="card" style="width: 18rem;">
-                          <h3>Leg Curls</h3>
+                          <h3 id='header'>Leg Curls</h3>
                             <iframe id="video0" src="https:www.youtube.com/embed/ZHlBSI6JPsA" frameborder="0" allowfullscreen></iframe>
                             <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">Rule number 1 when crafting a workout plan.....Don't skip leg day! Need we say more?</p>
                                                         <!-- Button trigger modal -->
                               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter6">
                                 Learn More
@@ -272,7 +278,7 @@ The plank (also called a front hold, hover, or abdominal bridge) is an isometric
                                       </button>
                                     </div>
                                     <div class="modal-body">
-                                      ...
+                                        The leg curl, also known as the hamstring curl, is an isolation exercise that targets the hamstring muscles. The exercise involves flexing the lower leg against resistance towards the buttocks. 
                                     </div>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -289,9 +295,11 @@ The plank (also called a front hold, hover, or abdominal bridge) is an isometric
                 </div>
               </div>
             </div>
+          </div>
+    
 
             <footer> </footer>
-      
+            
       
 
 

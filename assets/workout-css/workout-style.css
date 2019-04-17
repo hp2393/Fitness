@@ -1,14 +1,46 @@
+body{
+
+    background-color: black;
+    
+    
+
+}
+
+#header{
+    color: goldenrod;
+    text-align: center;
+}
+
+
 #header1{
-    background-color: aquamarine;
+    background-color: goldenrod;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     
     
 
-};
+}
 
-body{
 
-    background-color: black;
 
-};
+
+#player{
+
+    margin-left: 200px;
+
+}
+
+.row{
+    margin-left: 75px;
+}
+
+#image{
+    margin-left: 150px;
+}
+
+
+#exampleModalCenterA{
+    height: 50px;
+    
+    
+}
