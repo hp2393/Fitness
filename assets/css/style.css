@@ -7,6 +7,10 @@ body{
 .navbar-style{
     color: white;
 
+    border-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+
     background-image: url(../images/main-row-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,12 +18,14 @@ body{
 
 #logo-container {
     margin: 40px 15px;
-
-    height: 600px;
-
+    
     background-image: url(../images/main-row-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#logo-col {
+    background-color: black;
 }
 
 #aspects-container {
